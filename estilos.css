@@ -1,0 +1,48 @@
+header{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: flex;
+    justify-content:space-between;
+    padding: 0 25px;
+    background: transparent;
+    transition: all ease 0.7s;
+
+}
+
+.usuario{
+    height: 20px;
+}
+
+.usuario img{
+    height: 100%;
+}
+
+.inicio,
+.famosos,
+.recomendados,
+.romance{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 10px;
+    border-style: none;
+    background-color: transparent;
+    color: white;
+    opacity: 1;
+}
+
+.inicio:hover,
+.famosos:hover,
+.recomendados:hover,
+.romance:hover{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer{
+    margin: 50px; 
+    text-align: center;
+}
