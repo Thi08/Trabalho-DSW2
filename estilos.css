@@ -14,7 +14,8 @@ header{
 }
 
 .usuario{
-    height: 20px;
+    height: 40px;
+    padding-top: 2px;
 }
 
 .usuario img{
@@ -30,7 +31,7 @@ header{
     padding: 8px 10px;
     border-style: none;
     background-color: transparent;
-    color: white;
+    color: black;
     opacity: 1;
 }
 
