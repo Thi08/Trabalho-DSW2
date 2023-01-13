@@ -1,16 +1,51 @@
-header{
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
     position: fixed;
-    z-index: 100;
+    z-index: 1;
+    width: 100%;
     top: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
     display: flex;
     justify-content:space-between;
-    padding: 0 25px;
+    padding: 0 20px;
     background: transparent;
-    transition: all ease 0.7s;
+    transition: all ease 0.6s;
+}
 
+body {
+    background-color: #111111;
+    margin-top: 3rem;
+}
+
+.filmes{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row{
+    color: white;
+    margin-left: 20px;
+}
+
+.posters:hover{
+    transform: scale(1.10);
+}
+
+.filmes::-webkit-scrollbar{
+    display: none
+}
+
+.posters {
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
 }
 
 .usuario{
@@ -22,28 +57,24 @@ header{
     height: 100%;
 }
 
-.inicio,
-.famosos,
-.recomendados,
-.romance{
-    font-size: 15px;
+.button-top{
+    font-size: 1rem;
     font-weight: bold;
     padding: 8px 10px;
     border-style: none;
     background-color: transparent;
-    color: black;
+    color: white;
     opacity: 1;
-}
-
-.inicio:hover,
-.famosos:hover,
-.recomendados:hover,
-.romance:hover{
-    font-size: 20px;
     cursor: pointer;
 }
+
+.button-top:hover{
+    transform: scale(1.10);
+}
+
 
 footer{
     margin: 50px; 
     text-align: center;
+    color: white;
 }
