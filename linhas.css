@@ -8,7 +8,8 @@
 .row{
     color: white;
     margin-left: 20px;
-    margin-top: -2.5rem;
+    margin-top: -2.5vw;
+    font-size: 1.3vw;
 }
 
 .posters:hover{
@@ -20,10 +21,8 @@
 }
 
 .posters {
-    width: 100%;
-    object-fit: contain;
-    max-height: 120px;
+    width: 20vw;
     margin-right: 10px;
     transition: transform 450ms;
-    margin-bottom: 3.5rem;
+    margin-bottom: 3vw;
 }

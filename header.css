@@ -24,3 +24,13 @@
 .button-top:hover{
     transform: scale(1.10);
 }
+
+@media only screen and (max-width: 884px){
+    #header-series, #header-suspense, #header-drama {
+        display: none;
+    }
+    .button-top{
+        font-size: 70%;
+    }
+    
+}
