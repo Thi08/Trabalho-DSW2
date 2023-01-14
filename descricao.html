@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
     <link rel="stylesheet" type="text/css" href="bodyDesc.css">
     <meta charset="UTF-8">
@@ -17,43 +16,52 @@
         <button class="button-top" id="header-inicio">
             Inicio
         </button>
-        <div id="divBusca">
+        <div class="divBusca">
             <input type="text" id="txtBusca" placeholder="Buscar..."/>
-            <img src="Imagens/pesquisa.svg" id="btnBusca" alt="Buscar"/>
+            <img id="pesquisar" src="Imagens/pesquisa.svg" id="btnBusca" alt="Buscar"/>
           </div>
     </div>
 
-    <div>
-        <h1>The Office</h1>
-        <p>Série de TV • 2005-2013</p>
+    <!--titulo e avaliação-->
+    <div class="row-1">
+        <div class="titulo">
+            <h1>The Office</h1>
+            <p>Série de TV • 2005-2013</p>
+        </div>
+        <div class="avaliacao">
+            <p>Avaliação</p>
+            <div class="nota">
+                <p>⭐</p>
+                <p>4.5/5</p>
+            </div>
+        </div>
     </div>
 
-    <div>
-        <p>Avaliação</p>
-        <p>⭐</p>
-        <p>4.5/5</p>
+    <!--Midias-->
+    <div class="row-2">
+        <div>
+            <img class="imagem" src="./Imagens/theOffice2.jpg" alt ="filme" class="posters">
+        </div>
+        <div>
+            <iframe class="video" src="https://www.youtube.com/embed/tNcDHWpselE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </div>
 
-    <div>
-        <img src="./Imagens/The Office.jpg" alt ="filme" class="posters" />
-    </div>
-
-    <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/tNcDHWpselE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-
-    <div>
-        <h2>Resumo</h2>
-        <p>A série acompanha o dia-a-dia do escritório de uma fábrica de papel, a Dunder Miffin, localizada em Scranton, na Pensilvânia. Mostra o chefe Michael tentando estimular seus insatisfeitos funcionários em meio a diversas crises e comportamentos peculiares.</p>
-    </div>
-
-    <div>
-        <h2>Artista</h2>
-        <p>Steve Carell • Jenna Fischer • John Krasinski</p>
-    </div>
-
-    <div>
-        <img width="200" height="170" src="./Imagens/prime.png" alt ="amazon prime"/>
+    <!--Descrição-->
+    <div class="row-3">
+        <div class="texto">
+            <div>
+                <h2>Resumo</h2>
+                <p>A série acompanha o dia-a-dia do escritório de uma fábrica de papel, a Dunder Miffin, localizada em Scranton, na Pensilvânia. Mostra o chefe Michael tentando estimular seus insatisfeitos funcionários em meio a diversas crises e comportamentos peculiares.</p>
+            </div>
+            <div>
+                <h2>Artista</h2>
+                <p>Steve Carell • Jenna Fischer • John Krasinski</p>
+            </div>
+        </div>
+        <div class="stream">
+            <img width="180" height="153" src="./Imagens/prime.png" alt ="amazon prime"/>
+        </div>
     </div>
 
 </body>
