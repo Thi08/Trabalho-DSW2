@@ -1,8 +1,8 @@
 .destaque{
-    background-image: linear-gradient(180deg, transparent 45%, rgba(0,0,0,0.8)) ,url('Imagens/The\ Office.jpg');
+    background-image: linear-gradient(180deg, transparent 45%, rgba(0,0,0,0.8)) ,url('Imagens/Destaque.png');
     background-size: cover;
     color: white;
-    height: 37vw;
+    height: 38vw;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
 }
 
@@ -16,6 +16,10 @@
 
 .destaque_titulo{
     font-size: 4vw;
+    width: 45%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .destaque_botao{
