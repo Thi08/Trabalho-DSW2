@@ -1,0 +1,31 @@
+/*Global*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    color: white;
+}
+
+/*header barra de pesquisa*/
+#divBusca{
+    background-color:white;
+    border:solid 1px;
+    border-radius:15px;
+    width:300px;
+  }
+  
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    border:none;
+    height:32px;
+    width:260px;
+  }
+
