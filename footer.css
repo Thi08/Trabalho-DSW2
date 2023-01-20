@@ -2,12 +2,12 @@ footer{
     padding: 2vw;
     text-align: center;
     color: white;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 @media screen and (max-width: 884px) {
     footer{
-        font-size: 3.2vw;
+        font-size: 3.1vw;
     }
 }
 
