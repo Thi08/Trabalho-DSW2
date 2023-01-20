@@ -22,8 +22,20 @@
 }
 
 .posters {
-    width: 20vw;
+    max-width: 20vw;
     margin-right: 10px;
     transition: transform 450ms;
     margin-bottom: 3vw;
+}
+
+@media  only screen and (max-width: 884px) {
+    .row{
+        font-size: 3vw;
+    }
+    .posters{
+        max-width: 40vw;
+    }
+    .filmes{
+        padding: 10px;
+    }
 }
