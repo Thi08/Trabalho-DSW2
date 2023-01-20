@@ -54,7 +54,9 @@ body {
 /*Header barra de pesquisa*/
 .divBusca {
   display: flex;
-  margin: auto;
+  justify-content: flex-end;
+  margin-right: 10vw;
+  margin-top: 1vw;
   background-color:white;
   border:solid 1px;
   border-radius:15px;
