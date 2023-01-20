@@ -1,7 +1,6 @@
 .header{
     position: fixed;
     width: 100%;
-    font-size: 1.2rem;
     top: 0;
     display: flex;
     justify-content:space-between;
@@ -11,7 +10,7 @@
 }
 
 .button-top{
-    font-size: 1rem;
+    font-size: 1.2vw;
     font-weight: bold;
     padding: 8px 10px;
     border-style: none;
@@ -26,14 +25,9 @@
 }
 
 @media only screen and (max-width: 884px){
-    #header-series, #header-acao, #header-drama {
+    .header{
         display: none;
     }
-    .button-top{
-        font-size: 70%;
-    }
-    .header{
-        font-size: 0.8rem;
-    }
-    
+
+        
 }

@@ -2,7 +2,7 @@
     background-image: linear-gradient(180deg, transparent 45%, rgba(0,0,0,0.8)) ,url('Imagens/Destaque.png');
     background-size: cover;
     color: white;
-    height: 38vw;
+    height: 40vw;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
 }
 
@@ -15,8 +15,9 @@
 }
 
 .destaque_titulo{
-    font-size: 4vw;
+    font-size: 3vw;
     width: 45%;
+    margin-top: 1vw;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -28,7 +29,7 @@
     outline: none;
     border: none;
     font-weight: 700;
-    font-size: 1.5vw;
+    font-size: 1vw;
     border-radius: 0.5vw;
     margin-top: 1rem;
     padding: 1vw 3vw;
@@ -51,4 +52,25 @@
     display: -webkit-box;
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical; 
+}
+
+@media screen and (max-width: 884px) {
+    .destaque{
+        height: 55vw;
+    }
+    .destaque_titulo{
+        font-size: 5vw;
+        display:block;
+    }
+    .destaque_detalhes{
+        margin-left: 20px;
+    }
+    .destaque_botao{
+        font-size: 4vw;
+        margin-top: 10vw;
+    }
+    .destaque_descricao{
+        display:none;
+    }
+    
 }
