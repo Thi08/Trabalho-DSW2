@@ -27,3 +27,15 @@
     transition: transform 450ms;
     margin-bottom: 3vw;
 }
+
+@media  only screen and (max-width: 884px) {
+    .row{
+        font-size: 2vw;
+    }
+    .posters{
+        width: 30vw;
+    }
+    .filmes{
+        padding: 10px;
+    }
+}
