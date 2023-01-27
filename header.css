@@ -1,20 +1,19 @@
 .header{
     position: fixed;
+    z-index: 1;
     width: 100%;
-    top: 0;
+    margin: 0;
     display: flex;
     justify-content:space-between;
-    padding: 0 4%;
     background:none;
+    padding: 1% 5%;
+    height: 50px;
     background-image: linear-gradient(0deg, transparent, rgba(37,37,37,0.8), #111);
 }
 
 .button-top{
-    font-size: 1.2vw;
     font-weight: bold;
-    padding: 8px 10px;
-    border-style: none;
-    background-color: transparent;
+    text-decoration: none;
     color: white;
     opacity: 1;
     cursor: pointer;
@@ -27,7 +26,5 @@
 @media only screen and (max-width: 884px){
     .header{
         display: none;
-    }
-
-        
+    }  
 }
