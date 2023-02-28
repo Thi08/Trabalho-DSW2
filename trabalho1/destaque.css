@@ -1,8 +1,9 @@
 .destaque{
-    background-image: linear-gradient(180deg, transparent 45%, rgba(0,0,0,0.8)) ,url('Imagens/Destaque.png');
+    background-image: linear-gradient(180deg, transparent 45%, rgba(0,0,0,0.8)) ,url('Imagens/Destaque.jpg');
     background-size: cover;
+    background-position: center;
     color: white;
-    height: 40vw;
+    height: 42vw;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
 }
 
@@ -15,26 +16,22 @@
 }
 
 .destaque_titulo{
-    font-size: 3vw;
+    font-size: 3.5vw;
     width: 45%;
-    margin-top: 1vw;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    padding-bottom: 5%;
 }
 
 .destaque_botao{
     color: black;
     cursor: pointer;
-    outline: none;
-    border: none;
+    text-decoration: none;
     font-weight: 700;
     font-size: 1vw;
     border-radius: 0.5vw;
-    margin-top: 1rem;
     padding: 1vw 3vw;
     background-color: white;
     opacity: 0.9;
+
 }
 
 .destaque_botao:hover{
@@ -43,9 +40,9 @@
 }
 
 .destaque_descricao{
-    padding-top: 1vw;
+    padding-top: 4%;
     text-align:justify;
-    width: 28%;
+    width: 42%;
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 1.25vw;
@@ -59,18 +56,22 @@
         height: 55vw;
     }
     .destaque_titulo{
-        font-size: 5vw;
+        font-size: 6vw;
         display:block;
-    }
-    .destaque_detalhes{
-        margin-left: 20px;
+        padding-bottom: 10%;
     }
     .destaque_botao{
-        font-size: 4vw;
-        margin-top: 10vw;
+        font-size: 2.5vw;
+        font-weight: 700;
     }
     .destaque_descricao{
-        display:none;
+        padding-top: 7%;
+        width: 50%;
+        font-size: 2.2vw;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical; 
+        
     }
-    
+     
 }
