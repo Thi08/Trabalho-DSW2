@@ -1,0 +1,177 @@
+/*Global*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    color: white;
+    margin-left: 8vw;
+    margin-right: 12vw;
+}
+
+/*Header*/
+.header{
+  position: fixed;
+  width: 100%;
+  font-size: 1.2rem;
+  top: 0;
+  display: flex;
+  justify-content:space-between;
+  padding: 0;
+  background:none;
+  background-image: linear-gradient(0deg, transparent, rgba(37,37,37,0.8), #111);
+}
+
+.button-top{
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px 10px;
+  border-style: none;
+  background-color:transparent;
+  color: white;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.button-top:hover{
+  transform: scale(1.10);
+}
+
+@media only screen and (max-width: 884px){
+  .button-top{
+      font-size: 70%;
+  }
+}
+
+/*Header barra de pesquisa*/
+.divBusca {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10vw;
+  margin-top: 1vw;
+  background-color:white;
+  border:solid 1px;
+  border-radius:15px;
+  width:300px;
+  height: 22px;
+}
+
+#txtBusca {
+  float:left;
+  background-color:transparent;
+  padding-left:20px;
+  font-style:italic;
+  border:none;
+  height:20px;
+  width:260px;
+}
+
+/* #btnBusca{
+  border:none;
+  float:left;
+  height:32px;
+  border-radius:0 7px 7px 0;
+  width:70px;
+  font-weight:bold;
+  background:#5F9EA0;
+} */
+
+#pesquisar {
+  width: 18px;
+  height: 18px;
+  /* float: left; */
+}
+
+@media only screen and (max-width: 884px){
+  .divBusca{
+    width: 205px;
+    flex-wrap: nowrap;
+  }
+
+  #pesquisar {
+    width: 20px;
+    padding-right: 5px;
+  }
+}
+
+/*Titulo e Avaliação*/
+
+.row-1 {
+  margin-top: 30px;
+  margin-left: 10px;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.titulo {
+  flex: 85%;
+}
+
+.avaliacao {
+  flex: 15%;
+}
+
+.nota {
+  display: flex;
+}
+
+@media only screen and (max-width: 884px){
+  .row-1 {
+    font-size: 2.5vw;
+  }
+}
+
+/*Midias(foto e video)*/
+
+.row-2 {
+  display: flex;
+  padding: 10px;
+}
+
+.imagem {
+  width: 24vw;
+  height: 30vw;
+  padding-right: 5px;
+  flex: 20%;
+}
+
+.video {
+  width: 58vw;
+  height: 30vw;
+}
+
+/*Descrição*/
+.row-3 {
+  display: flex;
+  padding-left: 10px;
+}
+
+.texto {
+  flex-wrap: wrap;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  margin: 0.7em 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 884px){
+  .row-3 {
+    flex-direction: column;
+  }
+
+  .texto {
+    font-size: 2.5vw;
+    flex: 100%;
+  }
+}
+
