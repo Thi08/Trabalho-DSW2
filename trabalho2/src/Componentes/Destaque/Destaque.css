@@ -1,0 +1,23 @@
+@media (max-width: 760px){
+    .destaque{
+        height: 90vh;
+    }
+    .nome-destaque{
+        font-size: 40px;
+    }
+    .info-destaque{
+        font-size: 16px;
+    }
+    .descricao-destaque{
+        font-size: 14px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+    .assistir-destaque,
+    .mylist-destaque{
+        font-size: 16px;
+    }
+    .genero-destaque{
+        font-size: 14px;
+    }
+}

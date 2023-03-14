@@ -1,0 +1,70 @@
+.fileiras{
+    margin-bottom: 30px;
+}
+
+.fileiras h2{
+    margin: 0px 0px 0px 30px;
+    font-size: 1.4vw;
+}
+
+.area-fileiras{
+    /* Tudo que passar na horizontal fica escondido */
+    overflow-x: hidden;
+    padding-left: 30px;
+}
+
+.lista-fileiras{
+    transition: all ease 0.5s;
+}
+
+.item-fileiras{
+    display: inline-block;
+    width: 150px;
+    cursor: pointer;
+}
+
+.item-fileiras img{
+    width: 100%;
+    transform: scale(0.90);
+    transition: all ease-in-out 0.2s;
+}
+
+.item-fileiras img:hover {
+    transform: scale(1.0);
+}
+
+.scroll-esquerda,
+.scroll-direita{
+    position: absolute;
+    width: 40px;
+    height: 225px;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+}
+
+.scroll-esquerda{
+    left: 0;
+}
+
+.scroll-direita{
+    right: 0;
+}
+
+.fileiras:hover .scroll-esquerda,
+.fileiras:hover .scroll-direita{
+    opacity: 1;
+}
+
+@media (max-width: 760px){
+    .scroll-esquerda,
+    .scroll-direita{
+        opacity: 1;
+    }
+}
