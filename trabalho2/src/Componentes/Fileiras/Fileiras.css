@@ -1,44 +1,92 @@
-.fileiras{
+.fileiras {
     margin-bottom: 30px;
 }
 
-.fileiras h2{
+.fileiras h2 {
     margin: 0px 0px 0px 30px;
-    font-size: 1.4vw;
+    font-size: 1.8vw;
 }
 
-.area-fileiras{
+.area-fileiras {
     /* Tudo que passar na horizontal fica escondido */
     overflow-x: hidden;
     padding-left: 30px;
 }
 
-.lista-fileiras{
+.lista-fileiras {
     transition: all ease 0.5s;
 }
 
-.item-fileiras{
+.item-fileiras {
     display: inline-block;
     width: 150px;
     cursor: pointer;
 }
 
-.item-fileiras img{
+.item-fileiras img {
     width: 100%;
     transform: scale(0.90);
     transition: all ease-in-out 0.2s;
 }
 
-.item-fileiras img:hover {
+.item-fileiras:hover img {
+    filter: brightness(40%);
     transform: scale(1.0);
 }
 
+.overview-fileiras {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.item-fileiras {
+    position: relative;
+}
+
+.nome-item-fileiras {
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, 50%);
+    display: none;
+}
+
+.item-fileiras:hover .nome-item-fileiras {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 3vh;
+    max-width: 280px;
+    max-height: 360px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+.overview-fileiras {
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    bottom: 15%;
+    transform: translate(-50%, 50%);
+    display: none;
+}
+
+.item-fileiras:hover .overview-fileiras {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
 .scroll-esquerda,
-.scroll-direita{
+.scroll-direita {
     position: absolute;
     width: 40px;
     height: 225px;
-    background-color: rgba(0,0,0,0.6);
     z-index: 99;
     display: flex;
     align-items: center;
@@ -49,22 +97,26 @@
     transition: all ease-in-out 0.5s;
 }
 
-.scroll-esquerda{
+.scroll-esquerda {
     left: 0;
 }
 
-.scroll-direita{
+.scroll-direita {
     right: 0;
 }
 
 .fileiras:hover .scroll-esquerda,
-.fileiras:hover .scroll-direita{
+.fileiras:hover .scroll-direita {
     opacity: 1;
 }
 
-@media (max-width: 760px){
+@media (max-width: 760px) {
+    .fileiras h2 {
+        font-size: 3.4vw;
+    }
+
     .scroll-esquerda,
-    .scroll-direita{
-        opacity: 1;
+    .scroll-direita {
+        opacity: 0.8;
     }
 }
