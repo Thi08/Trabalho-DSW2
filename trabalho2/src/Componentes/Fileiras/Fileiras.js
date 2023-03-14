@@ -18,7 +18,7 @@ export default ({ title, items }) => {
 
     const handleRightArrow = () => {
         let x = scrollX - Math.round(window.innerWidth / 3);
-        let listW = items.results.length * 165;
+        let listW = (items.results.length * 150) + Math.round(window.innerWidth / 8);
         if (x < ((window.innerWidth) - listW)) {
             x = 0;
         }
@@ -29,14 +29,13 @@ export default ({ title, items }) => {
 
         <div className='fileiras'>
             <h2>{title}</h2>
-            <div className='scroll-esquerda' onClick={handleLeftArrow}>
-                <IoIosArrowDropleftCircle style={{ fontSize: 50 }} />
-            </div>
+                <div className='scroll-esquerda' onClick={handleLeftArrow}>
+                    <IoIosArrowDropleftCircle style={{ fontSize: 50 }} />
+                </div>
 
-            <div className='scroll-direita' onClick={handleRightArrow}>
-                <IoIosArrowDroprightCircle style={{ fontSize: 50 }} />
-            </div>
-
+                <div className='scroll-direita' onClick={handleRightArrow}>
+                    <IoIosArrowDroprightCircle style={{ fontSize: 50 }} />
+                </div>
 
             {/* Area total dos filmes */}
             <div className="area-fileiras">

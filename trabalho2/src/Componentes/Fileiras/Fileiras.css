@@ -104,10 +104,10 @@
 .scroll-direita {
     right: 0;
 }
-
 .fileiras:hover .scroll-esquerda,
 .fileiras:hover .scroll-direita {
     opacity: 1;
+    background-color: rgba(0,0,0,0.6);
 }
 
 @media (max-width: 760px) {
